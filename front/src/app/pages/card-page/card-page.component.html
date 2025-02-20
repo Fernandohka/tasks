@@ -1,0 +1,8 @@
+@for (task of (tasks | async); track $index) {
+    <a [href]="task._id">
+        <app-card 
+            [title]="task.title"
+            [description]="task.description"
+        />
+    </a>
+}
